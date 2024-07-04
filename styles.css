@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(to right, blue, red);
+}
+
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(6, 100px);
+}
+
+.calculator > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+}
+
+.calculator > button:hover {
+  background-color: antiquewhite;
+}
+
+.display {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  background-color: grey;
+  overflow-wrap: break-word;
+  color: black;
+  font-size: 2.5rem;
+}
+
+.span-two {
+  grid-column: span 2;
+}
